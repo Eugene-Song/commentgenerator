@@ -2,7 +2,7 @@ import * as vscode from 'vscode';
 import axios from 'axios';
 
 const CHATGPT_API_KEY = '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';
-const CHATGPT_API_URL = 'https://api.openai.com/v1/chat/completions';
+const CHATGPT_API_URL = '<your key>';
 
 
 // const { extractFunctionInfo } = require('util.ts');
