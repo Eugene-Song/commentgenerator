@@ -1,4 +1,4 @@
-# Code Commenter: Automatic Comment Generator for VSCode
+# IDS721 Individual Project4: Comment generator
 
 Code Commenter is a Visual Studio Code extension that leverages the power of OpenAI's ChatGPT to automatically generate meaningful comments for your code. This plugin makes understanding and maintaining codebases easier, saving you time and effort in the long run.
 
