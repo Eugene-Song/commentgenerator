@@ -1,71 +1,67 @@
-# commentgenerator README
+# Code Commenter: Automatic Comment Generator for VSCode
 
-This is the README for your extension "commentgenerator". After writing up a brief description, we recommend including the following sections.
+Code Commenter is a Visual Studio Code extension that leverages the power of OpenAI's ChatGPT to automatically generate meaningful comments for your code. This plugin makes understanding and maintaining codebases easier, saving you time and effort in the long run.
 
 ## Features
 
-Describe specific features of your extension including screenshots of your extension in action. Image paths are relative to this README file.
+- Automatically generates comments for functions, classes, and methods.
+- Utilizes the ChatGPT API for accurate and human-like comments.
+- Customizable shortcut: Command+Shift+P (Mac) or Ctrl+Shift+P (Windows/Linux).
+- Easy installation and usage within VSCode.
 
-For example if there is an image subfolder under your extension project workspace:
+## Installation
 
-\!\[feature X\]\(images/feature-x.png\)
+1. Clone this repository to your local machine.
+2. Open Visual Studio Code.
+3. Go to Extensions (or press `Cmd+Shift+X` on Mac, `Ctrl+Shift+X` on Windows/Linux).
+4. Click the `...` (More Actions) button in the top-right corner of the Extensions pane.
+5. Select "Install from VSIX...".
+6. Locate and select the downloaded VSIX file from this repository.
+7. Reload VSCode to activate the extension.
 
-> Tip: Many popular extensions utilize animations. This is an excellent way to show off your extension! We recommend short, focused animations that are easy to follow.
+## Prerequesite
+
+Since this app uses the chatgpt-3.5 API, so you need to get your own api key and set it mannually hardcode into this plugin, Use this link to get a key. (https://openai.com)
+*Note: This plugin is currently in development, and we plan to publish it on the VSCode Marketplace in the near future for easier installation.*
+
+## Usage
+
+1. Place your cursor on the line of code you want to generate a comment for.
+2. Press `Cmd+Shift+P` (Mac) or `Ctrl+Shift+P` (Windows/Linux) to open the Command Palette.
+3. Type "Automatically Comment Generator" in the Command Palette and press Enter.
+4. The extension will generate a comment for the selected line of code using the ChatGPT API.
+5. Review and edit the generated comment as needed.
 
 ## Requirements
 
-If you have any requirements or dependencies, add a section describing those and how to install and configure them.
+- Visual Studio Code (version 1.62.0 or newer).
+- An internet connection for accessing the ChatGPT API.
+- A valid API key for the ChatGPT API (sign up [here](https://www.openai.com/signup)).
 
-## Extension Settings
+## Configuration
 
-Include if your extension adds any VS Code settings through the `contributes.configuration` extension point.
+To configure the plugin with your API key and preferences, open the VSCode Settings (File > Preferences > Settings), and search for "Code Commenter". Update the following settings as needed:
 
-For example:
+- `codeCommenter.apiKey`: Enter your ChatGPT API key.
+- `codeCommenter.shortcut`: Customize the keyboard shortcut for generating comments (default is `Cmd+Shift+P` on Mac, `Ctrl+Shift+P` on Windows/Linux).
 
-This extension contributes the following settings:
+## Screeenshots
 
-* `myExtension.enable`: Enable/disable this extension.
-* `myExtension.thing`: Set to `blah` to do something.
+## Future Plans
+Before:
+<img width="877" alt="截屏2023-05-04 下午3 00 07" src="https://user-images.githubusercontent.com/63761776/236302967-0af03395-8469-41e6-b030-0d3494320e6f.png">
+After:
+<img width="942" alt="截屏2023-05-04 下午3 00 24" src="https://user-images.githubusercontent.com/63761776/236302982-59eb853a-44a9-45c0-87bf-312b4a7a78bb.png">
 
-## Known Issues
+- Publish the extension on the VSCode Marketplace for easier installation and updates.
+- Add support for more programming languages.
+- Improve the accuracy and relevancy of generated comments.
+- Allow customization of comment styles and templates.
 
-Calling out known issues can help limit users opening duplicate issues against your extension.
+## Contributing
 
-## Release Notes
+We welcome contributions to improve the Code Commenter plugin. Please feel free to submit issues and pull requests on the GitHub repository. We appreciate your help in making this plugin better for the developer community!
 
-Users appreciate release notes as you update your extension.
+## License
 
-### 1.0.0
-
-Initial release of ...
-
-### 1.0.1
-
-Fixed issue #.
-
-### 1.1.0
-
-Added features X, Y, and Z.
-
----
-
-## Following extension guidelines
-
-Ensure that you've read through the extensions guidelines and follow the best practices for creating your extension.
-
-* [Extension Guidelines](https://code.visualstudio.com/api/references/extension-guidelines)
-
-## Working with Markdown
-
-You can author your README using Visual Studio Code. Here are some useful editor keyboard shortcuts:
-
-* Split the editor (`Cmd+\` on macOS or `Ctrl+\` on Windows and Linux).
-* Toggle preview (`Shift+Cmd+V` on macOS or `Shift+Ctrl+V` on Windows and Linux).
-* Press `Ctrl+Space` (Windows, Linux, macOS) to see a list of Markdown snippets.
-
-## For more information
-
-* [Visual Studio Code's Markdown Support](http://code.visualstudio.com/docs/languages/markdown)
-* [Markdown Syntax Reference](https://help.github.com/articles/markdown-basics/)
-
-**Enjoy!**
+Code Commenter is released under the [MIT License](https://opensource.org/licenses/MIT).
